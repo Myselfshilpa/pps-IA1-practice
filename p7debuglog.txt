@@ -27,15 +27,15 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x89c: file p10original.c, line 31.
+Breakpoint 1 at 0x89c: file p7original.c, line 31.
 (gdb) r
-Starting program: /home/runner/pps-test1-saad-16/a.out 
+Starting program: /home/runner/pps-IA1-practice/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p10original.c:31
+Breakpoint 1, main () at p7original.c:31
 31     a=input(); 
 (gdb) s
-input () at p10original.c:9
+input () at p7original.c:9
 9    { 
 (gdb) n
 11     printf("enter the real no.\n"); 
@@ -54,10 +54,10 @@ n
 (gdb) n
 16   } 
 (gdb) n
-main () at p10original.c:32
+main () at p7original.c:32
 32     b=input(); 
 (gdb) s
-input () at p10original.c:9
+input () at p7original.c:9
 9    { 
 (gdb) n
 11     printf("enter the real no.\n"); 
@@ -76,10 +76,10 @@ n
 (gdb) s
 16   } 
 (gdb) n
-main () at p10original.c:33
+main () at p7original.c:33
 33     sum=add(a,b); 
 (gdb) s
-add (a=..., b=...) at p10original.c:20
+add (a=..., b=...) at p7original.c:20
 20      sum.real=a.real+b.real; 
 (gdb) n
 21      sum.imaginary=a.imaginary+b.imaginary; 
@@ -88,16 +88,16 @@ add (a=..., b=...) at p10original.c:20
 (gdb) n
 23   } 
 (gdb) n
-main () at p10original.c:34
+main () at p7original.c:34
 34     output(a,b,sum); 
 (gdb) s
-output (a=..., b=..., sum=...) at p10original.c:26
+output (a=..., b=..., sum=...) at p7original.c:26
 26      printf("the sum is:\n %.1f + %.1fi + %.1f + %.1fi = %0.1f + %0.1fi ",a.real,a.imaginary,b.real,b.imaginary,sum.real,sum.imaginary); 
 (gdb) n
 the sum is:
 27   } 
 (gdb) n
-main () at p10original.c:35
+main () at p7original.c:35
 35     return 0; 
 (gdb) n
 36   }(gdb) Quit
